@@ -17,7 +17,7 @@ describe "My Sinatra Application" do
 	end
 
 	describe "GET '/about'" do
-	  it "should allow to acess about page" do
+	  it "should allow to access about page" do
 	  	get '/about'
 	  	expect(last_response).to be_ok
 	  end
@@ -26,5 +26,17 @@ describe "My Sinatra Application" do
 	  	get '/about'
 	  	expect(last_response.body).to include("This is Sinatra application")
 	  end
+	end
+
+	describe "POST '/book/:params'" do
+		it "should allow to access book page" do
+			post '/book'
+			expect(last_response).to be_ok
+		end
+
+		it "should return book name" do
+			post '/book/SinatraBook'
+			expect(last_response.body).to include("Book SinatraBook")
+		end
 	end
 end
