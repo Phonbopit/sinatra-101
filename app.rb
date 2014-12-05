@@ -7,4 +7,12 @@ class MyApp < Sinatra::Base
 		'Home Page'
 	end
 
+	get '/about' do
+		'About Page'
+	end
+
+	get 'book/:name' do
+		'Book #{params[:name]}'
+	end
+
 end
