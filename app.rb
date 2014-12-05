@@ -11,6 +11,10 @@ class MyApp < Sinatra::Base
 		erb :about
 	end
 
+	get '/book' do
+		'List all books'
+	end
+
 	get 'book/:name' do
 		'Book #{params[:name]}'
 	end

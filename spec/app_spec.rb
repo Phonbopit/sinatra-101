@@ -28,14 +28,16 @@ describe "My Sinatra Application" do
 	  end
 	end
 
-	describe "POST '/book/:params'" do
+	describe "GET '/book'" do
 		it "should allow to access book page" do
-			post '/book'
+			get '/book'
 			expect(last_response).to be_ok
 		end
+	end
 
+	describe "GET '/book/:params'" do
 		it "should return book name" do
-			post '/book/SinatraBook'
+			get '/book/SinatraBook'
 			expect(last_response.body).to include("Book SinatraBook")
 		end
 	end

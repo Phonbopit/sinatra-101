@@ -7,4 +7,5 @@ gem 'sinatra-contrib', require: 'sinatra/reloader'
 group :test, :development do
 	gem "rack-test"
   gem "rspec"
+  gem 'guard-rspec', require: false
 end
