@@ -1,14 +1,14 @@
-require 'rubygems'
-require 'sinatra/base'
+require 'bundler'
+Bundler.require
 
 class MyApp < Sinatra::Base
 
 	get '/' do
-		'Home Page'
+		erb :index
 	end
 
 	get '/about' do
-		'About Page'
+		erb :about
 	end
 
 	get 'book/:name' do
