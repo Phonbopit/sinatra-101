@@ -3,6 +3,14 @@ Bundler.require
 
 class MyApp < Sinatra::Base
 
+	configure :development do
+		register Sinatra::Reloader
+	end
+
+	not_found do
+		erb :error
+	end
+
 	get '/' do
 		erb :index
 	end
@@ -15,7 +23,7 @@ class MyApp < Sinatra::Base
 		'List all books'
 	end
 
-	get 'book/:name' do
+	post 'book/:name' do
 		'Book #{params[:name]}'
 	end
 

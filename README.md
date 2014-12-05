@@ -6,6 +6,7 @@ sinatra-101
 - Learn how to use sinatra
 - Learn Rspec testing.
 - Learn how to setup rack up file.
+- Learn to use guard auto testing.
 
 
 ## Useful Links
@@ -16,3 +17,4 @@ sinatra-101
 - [Rails Girls Sinatra Tutorial](http://guides.railsgirls.com/sinatra-app/)
 - [Testing Sinatra](http://www.sinatrarb.com/testing.html)
 - [Zero to Smoke Test with Sinatra](http://devblog.avdi.org/2014/07/08/zero-to-smoke-test-with-sinatra/)
+- [guard-rspec](https://github.com/guard/guard-rspec)
