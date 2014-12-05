@@ -12,10 +12,12 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/' do
+		@title = "Sinatra 101 : Home Page"
 		erb :index
 	end
 
 	get '/about' do
+		@title = "Sinatra 101 : About Us"
 		erb :about
 	end
 
@@ -23,8 +25,8 @@ class MyApp < Sinatra::Base
 		'List all books'
 	end
 
-	post 'book/:name' do
-		'Book #{params[:name]}'
+	get '/book/:name' do
+		"Book #{params[:name]}"
 	end
 
 end

@@ -10,6 +10,12 @@ describe "My Sinatra Application" do
 	    expect(last_response).to be_ok
 	  end
 
+	  it "should get title Sinatra 101 : Home Page" do
+	  	get '/'
+	  	expect(last_response).to be_ok
+	  	# expect(last_response.title).to "Sinatra 101 : Home Page"
+	  end
+
 	  it "display index content" do
 	  	get '/'
 	  	expect(last_response.body).to include("This is index")
@@ -37,8 +43,8 @@ describe "My Sinatra Application" do
 
 	describe "GET '/book/:params'" do
 		it "should return book name" do
-			get '/book/SinatraBook'
-			expect(last_response.body).to include("Book SinatraBook")
+			get "/book/BookName"
+			expect(last_response.body).to include("Book BookName")
 		end
 	end
 end
