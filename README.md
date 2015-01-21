@@ -21,6 +21,16 @@ sinatra-101
 	rackup -p 5555
 
 
+## Run Test
+
+- with rspec
+
+	rspec spec/app_spec.rb
+
+- with guard
+
+	bundle exec guard
+
 
 ## Useful Links
 
