@@ -13,24 +13,30 @@ sinatra-101
 
 1. Install gem in a local
 
+	```
 	cd sinatra-101
 	bundle
+	```
 
 2. Start a server with port number option.
 
+	```
 	rackup -p 5555
-
+	```
 
 ## Run Test
 
 - with rspec
 
+	```
 	rspec spec/app_spec.rb
-
+	```
+	
 - with guard
 
+	```
 	bundle exec guard
-
+	```
 
 ## Useful Links
 
