@@ -18,7 +18,7 @@ class MyApp < Sinatra::Base
 
 	get '/about' do
 		@title = "Sinatra 101 : About Us"
-		erb :about
+		erb :about, :locals => { :name => 'Chai' }
 	end
 
 	get '/book' do

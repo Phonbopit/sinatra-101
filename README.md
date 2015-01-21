@@ -9,6 +9,19 @@ sinatra-101
 - Learn to use guard auto testing.
 
 
+## Usage
+
+1. Install gem in a local
+
+	cd sinatra-101
+	bundle
+
+2. Start a server with port number option.
+
+	rackup -p 5555
+
+
+
 ## Useful Links
 
 - [Sinatra Documentation](http://www.sinatrarb.com/)
